@@ -24,7 +24,7 @@ class Middleware1 implements MiddlewareInterface
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $req= $request->withAttribute('next', '1');
-        throw new \RuntimeException('Exception thrown !');
+        // throw new \RuntimeException('Exception thrown !');
         if(1){
             return $handler->handle($req);
         }

@@ -1,0 +1,21 @@
+{
+    "name": "deep/laminas",
+    "type": "pacjage",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Api\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "platform":{
+            "php":"8.0"
+        }
+    },
+    "require": {
+        "laminas/laminas-httphandlerrunner": "^2.1",
+        "laminas/laminas-stratigility": "^3.5",
+        "laminas/laminas-diactoros": "^2.10"
+    }
+}
